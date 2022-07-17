@@ -1,3 +1,7 @@
+The original OpenZeppelin official repo is [here](https://github.com/OpenZeppelin/workshops/tree/master/01-defender-meta-txs).
+
+I modified the original source code a little bit for deploying the Polygon testnet (not xDai).
+
 # Defender Meta-Transactions Workshop
 
 Code for the workshop on Meta-Transactions using [OpenZeppelin Defender](https://openzeppelin.com/defender).
