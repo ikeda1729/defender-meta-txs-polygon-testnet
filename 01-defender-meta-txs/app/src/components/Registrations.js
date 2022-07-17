@@ -22,7 +22,7 @@ function Registrations() {
     };
     
     const subscribe = async() => {  
-      const past = await registry.queryFilter(filter);
+      const past = await registry.queryFilter(filter, -1000);
       setRegistrations((past.reverse() || []).map(mapEvent));
       registry.on(filter, listener);  
     }

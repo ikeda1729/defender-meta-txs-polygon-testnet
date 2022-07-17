@@ -25,7 +25,7 @@ module.exports = {
       accounts: [process.env.PRIVATE_KEY],
     },
     mumbai: {
-      url: 'https://matic-mumbai.chainstacklabs.com',
+      url: "https://polygon-mumbai.infura.io/v3/" + process.env.INFURA_API_KEY,
       accounts: [process.env.PRIVATE_KEY],
     }
   }

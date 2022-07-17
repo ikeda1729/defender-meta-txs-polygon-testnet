@@ -8,5 +8,5 @@ const UNSECURE_ENDPOINT = 'http://xdai.poanetwork.dev';
 const QUICKNODE_ENDPOINT = process.env.REACT_APP_QUICKNODE_URL;
 
 export function createProvider() {  
-  return new ethers.providers.JsonRpcProvider(QUICKNODE_ENDPOINT || MAIN_ENDPOINT, 100);
+  return new ethers.providers.JsonRpcProvider(QUICKNODE_ENDPOINT, 80001);
 }

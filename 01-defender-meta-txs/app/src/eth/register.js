@@ -33,7 +33,7 @@ export async function registerName(registry, provider, name) {
   await window.ethereum.enable();
   const userProvider = new ethers.providers.Web3Provider(window.ethereum);
   const userNetwork = await userProvider.getNetwork();
-  if (userNetwork.chainId !== 100) throw new Error(`Please switch to xDAI for signing`);
+  if (userNetwork.chainId !== 80001) throw new Error(`Please switch to xDAI for signing`);
 
   const signer = userProvider.getSigner();
   const from = await signer.getAddress();

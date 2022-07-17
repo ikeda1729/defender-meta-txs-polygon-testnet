@@ -9,7 +9,7 @@ function getInstance(name) {
 
 async function main() {
   const registry = await getInstance("Registry");
-  const events = await registry.queryFilter(registry.filters.Registered());
+  const events = await registry.queryFilter(registry.filters.Registered(), -1000);
   console.log('Registrations')
   console.log('=============')
   console.log(events.map(e => `[${e.blockNumber}] ${e.args.who} => ${e.args.name}`).join('\n'));
